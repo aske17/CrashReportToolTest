@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  BugsenseTest
+//  CrashlyticsTest
 //
 //  Created by GeunHwa Lee on 2013. 11. 26..
 //  Copyright (c) 2013년 AfreecaTV. All rights reserved.
@@ -11,12 +11,13 @@
 @interface ViewController ()
 
 @end
-  
+   
 @implementation ViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -26,10 +27,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)bugsenseTest:(id)sender
+- (IBAction)crash:(id)sender
 {
-    [NSException raise:NSInternalInconsistencyException
-                format:@"BugsenseTest in %@ method ", NSStringFromSelector(_cmd)];
+//    NSArray *array = [NSArray array];
+//    NSLog(@"%@",[array objectAtIndex:2]);
+    NSString *test = @"";
+    NSLog(@"test  = %@",[test substringToIndex:5]);
 }
-
 @end
